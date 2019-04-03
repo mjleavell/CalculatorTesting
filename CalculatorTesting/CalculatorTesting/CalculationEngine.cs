@@ -26,17 +26,11 @@ namespace Calculator
 
 
                 // REFACTORED Code
-                var splitNumbers = stuffToCalculate.Split('+')
-                    .Select(int.Parse).ToArray();
+                var splitNumbers = stuffToCalculate
+                    .Split('+')
+                    .Select(int.Parse);
 
-                var result = 0;
-
-                foreach (var number in splitNumbers)
-                {
-                    result += number;
-                }
-
-                return result;
+                return splitNumbers.Sum();
 
             }
             catch(FormatException)
