@@ -6,7 +6,19 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var calculator = new CalculationEngine();
+
+            Console.WriteLine("give me an addition problem");
+            var input = Console.ReadLine();
+
+            //try
+            //{
+            //    var result = calculator.DoMath(input);
+            //}
+            //catch (FormatException ex)
+            //{
+            //    ex.
+            //}
         }
     }
 }
